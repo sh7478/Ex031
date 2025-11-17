@@ -12,6 +12,14 @@ public class HourlyEmployee extends Employee{
     }
 
     @Override
+    public String toString() {
+        return super.toString() + "\nHourlyEmployee{" +
+                "hoursWorked=" + hoursWorked +
+                ", hourlyRate=" + hourlyRate +
+                '}';
+    }
+
+    @Override
     public double calculateMonthlySalary() {
         return this.hoursWorked * this.hourlyRate;
     }
