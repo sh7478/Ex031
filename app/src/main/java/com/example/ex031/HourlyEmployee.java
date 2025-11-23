@@ -5,9 +5,25 @@ public class HourlyEmployee extends Employee{
     private double hoursWorked;
     private double hourlyRate;
 
-    public HourlyEmployee(int employeeId, double baseSalery, String name, double hoursWorked, double hourlyRate) {
-        super(employeeId, baseSalery, name);
+    public HourlyEmployee(int employeeId, double baseSalary, String name, double hoursWorked, double hourlyRate) {
+        super(employeeId, baseSalary, name);
         this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
+    }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
         this.hourlyRate = hourlyRate;
     }
 

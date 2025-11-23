@@ -5,8 +5,8 @@ public class Salesperson extends Employee implements BonusEligible{
     private double salesCommission;
     private double totalSales;
 
-    public Salesperson(int employeeId, double baseSalery, String name, double salesCommission, double totalSales) {
-        super(employeeId, baseSalery, name);
+    public Salesperson(int employeeId, double baseSalary, String name, double salesCommission, double totalSales) {
+        super(employeeId, baseSalary, name);
         this.salesCommission = salesCommission;
         this.totalSales = totalSales;
     }
@@ -29,7 +29,7 @@ public class Salesperson extends Employee implements BonusEligible{
 
     @Override
     public double calculateMonthlySalary() {
-        return getBaseSalery() + (this.totalSales * this.salesCommission);
+        return getBaseSalary() + (this.totalSales * this.salesCommission);
     }
 
     @Override

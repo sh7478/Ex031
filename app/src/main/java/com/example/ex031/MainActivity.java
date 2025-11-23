@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         List<Employee> allEmployees = new ArrayList<>();
-        Manager m1 = new Manager(1234,5000, "Shalom", "logistic", 6);
-        Manager m2 = new Manager(5678,6000, "Jef", "IT", 4);
+        Manager m1 = new Manager(1234,5000, "Shalom", "logistic", 0.06);
+        Manager m2 = new Manager(5678,6000, "Jef", "IT", 0.04);
         Salesperson sp1 = new Salesperson(4572,2000, "Joe", 0.5, 700);
         Salesperson sp2 = new Salesperson(8910,2500, "Max", 0.3, 1500);
         HourlyEmployee he1 = new HourlyEmployee(5703,1000, "George", 8, 30.5);

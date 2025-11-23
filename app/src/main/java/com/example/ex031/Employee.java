@@ -2,12 +2,12 @@ package com.example.ex031;
 
 public abstract class Employee {
     private String name;
-    private double baseSalery;
+    private double baseSalary;
     private final int employeeId;
 
-    public Employee(int employeeId, double baseSalery, String name) {
+    public Employee(int employeeId, double baseSalary, String name) {
         this.employeeId = employeeId;
-        this.baseSalery = baseSalery;
+        this.baseSalary = baseSalary;
         this.name = name;
     }
 
@@ -19,12 +19,12 @@ public abstract class Employee {
         this.name = name;
     }
 
-    public double getBaseSalery() {
-        return baseSalery;
+    public double getBaseSalary() {
+        return baseSalary;
     }
 
-    public void setBaseSalery(double baseSalery) {
-        this.baseSalery = baseSalery;
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     public int getEmployeeId() {
@@ -36,7 +36,7 @@ public abstract class Employee {
     public String toString() {
         return "Employee{" +
                 "name='" + name + '\'' +
-                ", baseSalery=" + baseSalery +
+                ", baseSalary=" + baseSalary +
                 ", employeeId=" + employeeId +
                 '}';
     }

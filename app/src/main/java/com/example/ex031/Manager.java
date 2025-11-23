@@ -5,8 +5,8 @@ public class Manager extends Employee implements BonusEligible{
     private String department;
     private double managementBonusPercentage;
 
-    public Manager(int employeeId, double baseSalery, String name, String department, double managementBonusPercentage) {
-        super(employeeId, baseSalery, name);
+    public Manager(int employeeId, double baseSalary, String name, String department, double managementBonusPercentage) {
+        super(employeeId, baseSalary, name);
         this.department = department;
         this.managementBonusPercentage = managementBonusPercentage;
     }
@@ -29,12 +29,12 @@ public class Manager extends Employee implements BonusEligible{
 
     @Override
     public double calculateBonus() {
-        return getBaseSalery() * this.managementBonusPercentage;
+        return getBaseSalary() * this.managementBonusPercentage;
     }
 
     @Override
     public double calculateMonthlySalary() {
-        return getBaseSalery();
+        return getBaseSalary();
     }
 
     @Override
