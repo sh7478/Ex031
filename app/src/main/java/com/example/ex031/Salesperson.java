@@ -34,4 +34,12 @@ public class Salesperson extends Employee{
     {
         return this.totalSales*0.05;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Salesperson{" +
+                "salesCommission=" + salesCommission +
+                ", totalSales=" + totalSales +
+                '}';
+    }
 }
