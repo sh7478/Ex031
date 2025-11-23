@@ -1,12 +1,14 @@
 package com.example.ex031;
 
-public class Salesperson extends Employee{
+public class Salesperson extends Employee implements BonusEligible{
 
     private double salesCommission;
     private double totalSales;
 
-    public Salesperson(int employeeId, double baseSalery, String name) {
+    public Salesperson(int employeeId, double baseSalery, String name, double salesCommission, double totalSales) {
         super(employeeId, baseSalery, name);
+        this.salesCommission = salesCommission;
+        this.totalSales = totalSales;
     }
 
     public double getSalesCommission() {
@@ -30,6 +32,7 @@ public class Salesperson extends Employee{
         return getBaseSalery() + (this.totalSales * this.salesCommission);
     }
 
+    @Override
     public double calculateBonus()
     {
         return this.totalSales*0.05;

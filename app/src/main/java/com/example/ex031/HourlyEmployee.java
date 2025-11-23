@@ -13,7 +13,7 @@ public class HourlyEmployee extends Employee{
 
     @Override
     public String toString() {
-        return super.toString() + "\nHourlyEmployee{" +
+        return super.toString() + "HourlyEmployee{" +
                 "hoursWorked=" + hoursWorked +
                 ", hourlyRate=" + hourlyRate +
                 '}';
